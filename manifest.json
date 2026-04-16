@@ -1,0 +1,12 @@
+{
+  "name": "Social Media Messenger",
+  "description": "A smartphone interface extension for immersive roleplay, featuring a LINE-like messenger.",
+  "version": "1.0.0",
+  "author": "Lou & Assistant",
+  "js": [
+    "index.js"
+  ],
+  "css": [
+    "style.css"
+  ]
+}
