@@ -1,0 +1,96 @@
+/* สีพื้นหลังห้องแชทสไตล์ Line */
+.line-app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #749bb6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* แถบด้านบน (Header) */
+.line-header {
+    background-color: #272727;
+    color: white;
+    padding: 35px 15px 15px 15px; /* เผื่อพื้นที่ให้รอยบากโทรศัพท์ */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 2;
+}
+
+.line-back-btn {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.line-char-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* พื้นที่แสดงแชท */
+.line-chat-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* กล่องข้อความรวม (รูป + บับเบิล) */
+.line-message {
+    display: flex;
+    gap: 10px;
+    max-width: 85%;
+}
+
+.line-message.ai {
+    align-self: flex-start;
+}
+
+.line-message.user {
+    align-self: flex-end;
+    flex-direction: row-reverse; /* สลับให้บับเบิลอยู่ซ้าย รูปอยู่ขวา (หรือจะไม่ใส่รูป User ก็ได้) */
+}
+
+/* รูปโปรไฟล์ */
+.line-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #fff;
+}
+
+/* บับเบิลแชท */
+.line-bubble {
+    padding: 10px 14px;
+    border-radius: 18px;
+    font-size: 14px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    color: #000;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.line-message.ai .line-bubble {
+    background-color: #ffffff;
+    border-top-left-radius: 4px;
+}
+
+.line-message.user .line-bubble {
+    background-color: #85e04e; /* สีเขียว Line */
+    border-top-right-radius: 4px;
+}
+
+/* ซ่อน Scrollbar ให้ดูเนียนเหมือนมือถือ */
+.line-chat-container::-webkit-scrollbar {
+    width: 4px;
+}
+.line-chat-container::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
