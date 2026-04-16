@@ -12,7 +12,7 @@ export class LineApp {
             link.id = 'line-app-css';
             link.rel = 'stylesheet';
             // *สำคัญ*: ตรวจสอบชื่อโฟลเดอร์ extension ของคุณตรงนี้
-            link.href = '/scripts/extensions/social-media-messenger/apps/line-messenger/line.css';
+            link.href = '/scripts/extensions/phone-mini/apps/line-messenger/line.css';
             document.head.appendChild(link);
         }
 
