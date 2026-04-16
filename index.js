@@ -1,4 +1,5 @@
-import { getContext } from "../../../extensions.js";
+import { extension_settings, getContext } from "../../../extensions.js";
+import { eventSource, event_types } from "../../../../script.js";
 
 // ตัวแปรเก็บสถานะการเปิด/ปิดโทรศัพท์
 let isPhoneOpen = false;
